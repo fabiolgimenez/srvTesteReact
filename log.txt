@@ -1,0 +1,209 @@
+2025-04-27 11:45:11.123 -03 [22404] LOG:  iniciando PostgreSQL 17.4 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit
+2025-04-27 11:45:11.130 -03 [22404] LOG:  escutando no endereÁo IPv6 "::1", porta 5432
+2025-04-27 11:45:11.130 -03 [22404] LOG:  escutando no endereÁo IPv4 "127.0.0.1", porta 5432
+2025-04-27 11:45:11.339 -03 [21848] LOG:  sistema de banco de dados foi interrompido; ˙ltima execuÁ„o em 2025-04-26 18:04:26 -03
+2025-04-27 11:45:12.379 -03 [21848] LOG:  sistema de banco de dados n„o foi desligado corretamente; recuperaÁ„o autom·tica est· em andamento
+2025-04-27 11:45:12.457 -03 [21848] LOG:  redo inicia em 0/15CEB50
+2025-04-27 11:45:12.457 -03 [21848] LOG:  comprimento de registro inv·lido em 0/15CEC58: esperado pelo menos 24, obtido 0
+2025-04-27 11:45:12.457 -03 [21848] LOG:  refazer feito em 0/15CEC20 uso do sistema: CPU: usu·rio: 0.00 s, sistema: 0.00 s, decorrido: 0.00 s
+2025-04-27 11:45:12.495 -03 [16528] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-04-27 11:45:12.652 -03 [16528] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.041 s, total=0.189 s; sync files=2, longest=0.029 s, average=0.021 s; distance=0 kB, estimate=0 kB; lsn=0/15CEC58, redo lsn=0/15CEC58
+2025-04-27 11:45:12.686 -03 [22404] LOG:  sistema de banco de dados est· pronto para aceitar conexıes
+2025-04-27 12:16:29.494 -03 [3976] ERRO:  mensagem de liga√ß√£o forneceu 16 par√¢metros, mas comando preparado "" requer 1
+2025-04-27 12:16:29.494 -03 [3976] COMANDO:  SELECT * FROM users WHERE email = $1
+2025-04-27 12:27:50.749 -03 [21516] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 12:29:35.409 -03 [15568] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 12:31:18.927 -03 [20816] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 12:33:56.540 -03 [20300] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 12:35:12.734 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 12:35:13.032 -03 [16528] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.117 s, sync=0.059 s, total=0.298 s; sync files=2, longest=0.031 s, average=0.030 s; distance=0 kB, estimate=0 kB; lsn=0/15CEEF0, redo lsn=0/15CEE98
+2025-04-27 12:42:25.163 -03 [14468] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 12:42:44.999 -03 [17708] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 14:20:12.196 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 14:20:12.884 -03 [16528] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.432 s, sync=0.131 s, total=0.688 s; sync files=5, longest=0.032 s, average=0.027 s; distance=1 kB, estimate=1 kB; lsn=0/15CF3F0, redo lsn=0/15CF398
+2025-04-27 14:27:35.399 -03 [15532] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 15:15:22.475 -03 [17656] ERRO:  sintaxe de entrada √© inv√°lida para tipo bigint: "009.436.339-07"
+2025-04-27 15:15:22.475 -03 [17656] CONTEXTO:  par√¢metro de portal sem nome $5 = '...'
+2025-04-27 15:15:22.475 -03 [17656] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:20:07.522 -03 [19004] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:20:07.522 -03 [19004] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:20:07.522 -03 [19004] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:20:12.949 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 15:20:16.749 -03 [16528] LOG:  checkpoint complete: wrote 28 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.975 s, sync=0.717 s, total=3.801 s; sync files=28, longest=0.037 s, average=0.026 s; distance=91 kB, estimate=91 kB; lsn=0/15E6200, redo lsn=0/15E6170
+2025-04-27 15:20:54.939 -03 [4488] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:20:54.939 -03 [4488] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:20:54.939 -03 [4488] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:21:38.406 -03 [10668] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:21:38.406 -03 [10668] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:21:38.406 -03 [10668] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:22:14.479 -03 [8508] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:22:14.479 -03 [8508] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:22:14.479 -03 [8508] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:23:04.562 -03 [11784] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:23:04.562 -03 [11784] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:23:04.562 -03 [11784] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:23:34.191 -03 [5844] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:23:34.191 -03 [5844] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:23:34.191 -03 [5844] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:23:59.571 -03 [21596] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:23:59.571 -03 [21596] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:23:59.571 -03 [21596] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:25:12.777 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 15:25:13.360 -03 [16528] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.341 s, sync=0.128 s, total=0.583 s; sync files=4, longest=0.042 s, average=0.032 s; distance=3 kB, estimate=82 kB; lsn=0/15E6E48, redo lsn=0/15E6DF0
+2025-04-27 15:25:14.419 -03 [5624] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:25:14.419 -03 [5624] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:25:14.419 -03 [5624] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:25:49.510 -03 [10940] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:25:49.510 -03 [10940] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:25:49.510 -03 [10940] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:26:03.982 -03 [13976] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:26:03.982 -03 [13976] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:26:03.982 -03 [13976] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:26:05.841 -03 [22352] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:26:05.841 -03 [22352] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:26:05.841 -03 [22352] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:26:33.736 -03 [20220] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:26:33.736 -03 [20220] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:26:33.736 -03 [20220] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:27:31.499 -03 [18764] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:27:31.499 -03 [18764] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:27:31.499 -03 [18764] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:27:45.588 -03 [13356] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_email_key"
+2025-04-27 15:27:45.588 -03 [13356] DETALHE:  Chave (email)=(mail@mail.com) j√° existe.
+2025-04-27 15:27:45.588 -03 [13356] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:30:12.366 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 15:30:12.945 -03 [16528] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.343 s, sync=0.103 s, total=0.579 s; sync files=4, longest=0.032 s, average=0.026 s; distance=4 kB, estimate=74 kB; lsn=0/15E7F28, redo lsn=0/15E7ED0
+2025-04-27 15:45:12.980 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 15:45:13.238 -03 [16528] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.109 s, sync=0.043 s, total=0.259 s; sync files=2, longest=0.032 s, average=0.022 s; distance=2 kB, estimate=67 kB; lsn=0/15E8A88, redo lsn=0/15E8A30
+2025-04-27 15:51:46.842 -03 [18752] ERRO:  o valor nulo na coluna "senha" da rela√ß√£o "users" viola a restri√ß√£o de n√£o-nulo
+2025-04-27 15:51:46.842 -03 [18752] DETALHE:  Registro que falhou cont√©m (17, root, admine, root@root.com, 12345678900, null).
+2025-04-27 15:51:46.842 -03 [18752] COMANDO:  INSERT INTO users (nome,sobrenome, email,cpf) VALUES ($1, $2, $3, $4)
+2025-04-27 15:52:58.829 -03 [4044] ERRO:  o valor nulo na coluna "senha" da rela√ß√£o "users" viola a restri√ß√£o de n√£o-nulo
+2025-04-27 15:52:58.829 -03 [4044] DETALHE:  Registro que falhou cont√©m (1, root, admine, root@root.com, 12345678900, null).
+2025-04-27 15:52:58.829 -03 [4044] COMANDO:  INSERT INTO users (id,nome,sobrenome, email,cpf) VALUES ($1, $2, $3, $4,$5)
+2025-04-27 15:53:57.567 -03 [3916] ERRO:  o valor nulo na coluna "senha" da rela√ß√£o "users" viola a restri√ß√£o de n√£o-nulo
+2025-04-27 15:53:57.567 -03 [3916] DETALHE:  Registro que falhou cont√©m (1, root, admine, root@root.com, 12345678900, null).
+2025-04-27 15:53:57.567 -03 [3916] COMANDO:  INSERT INTO users (id,nome,sobrenome, email,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 15:55:12.258 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 15:55:12.531 -03 [16528] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.118 s, sync=0.046 s, total=0.273 s; sync files=2, longest=0.004 s, average=0.004 s; distance=0 kB, estimate=60 kB; lsn=0/15E8C58, redo lsn=0/15E8C00
+2025-04-27 15:57:10.512 -03 [11504] ERRO:  mensagem de liga√ß√£o forneceu 5 par√¢metros, mas comando preparado "" requer 4
+2025-04-27 15:57:10.512 -03 [11504] COMANDO:  UPDATE users SET nome = $1, sobrenome = $2, email = $3 , cpf = $4 WHERE id = $4
+2025-04-27 16:00:12.544 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 16:00:12.876 -03 [16528] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.117 s, sync=0.067 s, total=0.333 s; sync files=2, longest=0.052 s, average=0.033 s; distance=2 kB, estimate=55 kB; lsn=0/15E9828, redo lsn=0/15E97D0
+2025-04-27 16:04:19.960 -03 [6868] ERRO:  sintaxe de entrada √© inv√°lida para tipo bigint: "219.796.050-41"
+2025-04-27 16:04:19.960 -03 [6868] CONTEXTO:  par√¢metro de portal sem nome $5 = '...'
+2025-04-27 16:04:19.960 -03 [6868] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 16:06:01.115 -03 [5100] ERRO:  sintaxe de entrada √© inv√°lida para tipo bigint: "219.796.050-41"
+2025-04-27 16:06:01.115 -03 [5100] CONTEXTO:  par√¢metro de portal sem nome $5 = '...'
+2025-04-27 16:06:01.115 -03 [5100] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 16:06:48.438 -03 [12728] ERRO:  sintaxe de entrada √© inv√°lida para tipo bigint: "924.125.667-20"
+2025-04-27 16:06:48.438 -03 [12728] CONTEXTO:  par√¢metro de portal sem nome $5 = '...'
+2025-04-27 16:06:48.438 -03 [12728] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 16:07:39.262 -03 [19396] ERRO:  sintaxe de entrada √© inv√°lida para tipo bigint: "924.125.667-20"
+2025-04-27 16:07:39.262 -03 [19396] CONTEXTO:  par√¢metro de portal sem nome $5 = '...'
+2025-04-27 16:07:39.262 -03 [19396] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 16:09:47.306 -03 [17800] ERRO:  sintaxe de entrada √© inv√°lida para tipo bigint: "924.125.667-20"
+2025-04-27 16:09:47.306 -03 [17800] CONTEXTO:  par√¢metro de portal sem nome $5 = '...'
+2025-04-27 16:09:47.306 -03 [17800] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 16:10:10.342 -03 [17708] ERRO:  duplicar valor da chave viola a restri√ß√£o de unicidade "usuarios_cpf_key"
+2025-04-27 16:10:10.342 -03 [17708] DETALHE:  Chave (cpf)=(92412566720) j√° existe.
+2025-04-27 16:10:10.342 -03 [17708] COMANDO:  INSERT INTO users (nome,sobrenome, email, senha,cpf) VALUES ($1, $2, $3, $4, $5)
+2025-04-27 16:10:12.891 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 16:10:13.829 -03 [16528] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.647 s, sync=0.179 s, total=0.939 s; sync files=7, longest=0.032 s, average=0.026 s; distance=4 kB, estimate=50 kB; lsn=0/15EAA78, redo lsn=0/15EAA20
+2025-04-27 16:10:54.968 -03 [5524] ERRO:  mensagem de liga√ß√£o forneceu 2 par√¢metros, mas comando preparado "" requer 1
+2025-04-27 16:10:54.968 -03 [5524] COMANDO:  DELETE FROM users WHERE id = $1
+2025-04-27 16:12:55.053 -03 [8288] ERRO:  mensagem de liga√ß√£o forneceu 2 par√¢metros, mas comando preparado "" requer 1
+2025-04-27 16:12:55.053 -03 [8288] COMANDO:  DELETE FROM users WHERE id = $1
+2025-04-27 16:15:12.840 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 16:15:13.773 -03 [16528] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.647 s, sync=0.184 s, total=0.934 s; sync files=7, longest=0.032 s, average=0.027 s; distance=4 kB, estimate=45 kB; lsn=0/15EBD58, redo lsn=0/15EBD00
+2025-04-27 16:32:04.255 -03 [11580] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 16:32:04.258 -03 [13148] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 16:32:04.258 -03 [17728] LOG:  n√£o foi poss√≠vel receber dados do cliente: unrecognized winsock error 10054
+2025-04-27 16:35:12.797 -03 [16528] LOG:  checkpoint starting: time
+2025-04-27 16:35:13.072 -03 [16528] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.113 s, sync=0.059 s, total=0.276 s; sync files=2, longest=0.033 s, average=0.030 s; distance=3 kB, estimate=41 kB; lsn=0/15ECAD8, redo lsn=0/15ECA80
+2025-04-27 16:40:19.650 -03 [22404] LOG:  processo escritor do WAL (PID 12652) foi terminado pela exceÁ„o 0xC000013A
+2025-04-27 16:40:19.650 -03 [22404] DICA:  Veja o arquivo de cabeÁalho C "ntstatus.h" para obter uma descriÁ„o do valor hexadecimal.
+2025-04-27 16:40:19.650 -03 [22404] LOG:  terminando quaisquer outros processos servidor ativos
+2025-04-27 16:40:19.669 -03 [22404] LOG:  todos os processos servidor foram terminados; reinicializando
+2025-04-27 16:40:19.744 -03 [22404] LOG:  processo de ativaÁ„o (PID 21636) foi terminado pela exceÁ„o 0xC0000142
+2025-04-27 16:40:19.744 -03 [22404] DICA:  Veja o arquivo de cabeÁalho C "ntstatus.h" para obter uma descriÁ„o do valor hexadecimal.
+2025-04-27 16:40:19.744 -03 [22404] LOG:  interrompendo a ativaÁ„o devido a falha no processo de ativaÁ„o
+2025-04-27 16:40:19.745 -03 [22404] LOG:  sistema de banco de dados est· desligado
+2025-04-27 16:58:37.835 -03 [22140] LOG:  iniciando PostgreSQL 17.4 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit
+2025-04-27 16:58:37.841 -03 [22140] LOG:  escutando no endereÁo IPv6 "::1", porta 5432
+2025-04-27 16:58:37.841 -03 [22140] LOG:  escutando no endereÁo IPv4 "127.0.0.1", porta 5432
+2025-04-27 16:58:38.024 -03 [18532] LOG:  sistema de banco de dados foi interrompido; ˙ltima execuÁ„o em 2025-04-27 16:35:13 -03
+2025-04-27 16:58:38.536 -03 [18532] LOG:  sistema de banco de dados n„o foi desligado corretamente; recuperaÁ„o autom·tica est· em andamento
+2025-04-27 16:58:38.564 -03 [18532] LOG:  redo inicia em 0/15ECA80
+2025-04-27 16:58:38.564 -03 [18532] LOG:  comprimento de registro inv·lido em 0/15ECB88: esperado pelo menos 24, obtido 0
+2025-04-27 16:58:38.565 -03 [18532] LOG:  refazer feito em 0/15ECB50 uso do sistema: CPU: usu·rio: 0.00 s, sistema: 0.00 s, decorrido: 0.00 s
+2025-04-27 16:58:38.585 -03 [12220] LOG:  checkpoint starting: end-of-recovery immediate wait
+2025-04-27 16:58:38.746 -03 [12220] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.051 s, total=0.179 s; sync files=2, longest=0.031 s, average=0.026 s; distance=0 kB, estimate=0 kB; lsn=0/15ECB88, redo lsn=0/15ECB88
+2025-04-27 16:58:38.784 -03 [22140] LOG:  sistema de banco de dados est· pronto para aceitar conexıes
+2025-04-27 17:03:38.809 -03 [12220] LOG:  checkpoint starting: time
+2025-04-27 17:03:39.862 -03 [12220] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.683 s, sync=0.215 s, total=1.054 s; sync files=7, longest=0.066 s, average=0.031 s; distance=4 kB, estimate=4 kB; lsn=0/15EDFC8, redo lsn=0/15EDF70
+2025-04-27 17:03:59.039 -03 [5908] ERRO:  sintaxe de entrada √© inv√°lida para tipo integer: "undefined"
+2025-04-27 17:03:59.039 -03 [5908] CONTEXTO:  par√¢metro de portal sem nome $1 = '...'
+2025-04-27 17:03:59.039 -03 [5908] COMANDO:  DELETE FROM users WHERE id = $1
+2025-04-27 17:08:38.867 -03 [12220] LOG:  checkpoint starting: time
+2025-04-27 17:08:39.802 -03 [12220] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.656 s, sync=0.177 s, total=0.935 s; sync files=7, longest=0.035 s, average=0.026 s; distance=6 kB, estimate=6 kB; lsn=0/15EF7E0, redo lsn=0/15EF788
+2025-04-27 17:13:54.529 -03 [22140] LOG:  pedido de desligamento r·pido foi recebido
+2025-04-27 17:13:54.531 -03 [20700] ERRO:  cancelando o comando devido a um pedido do usu·rio
+2025-04-27 17:13:54.556 -03 [22140] LOG:  interrompendo quaisquer transaÁıes ativas
+2025-04-27 17:13:54.570 -03 [22140] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 20700) terminou com cÛdigo de retorno 1
+2025-04-27 17:13:54.590 -03 [12220] LOG:  desligando
+2025-04-27 17:13:54.621 -03 [12220] LOG:  checkpoint starting: shutdown immediate
+2025-04-27 17:13:54.743 -03 [12220] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.154 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=5 kB; lsn=0/15EF890, redo lsn=0/15EF890
+2025-04-27 17:13:54.761 -03 [22140] LOG:  sistema de banco de dados est· desligado
+2025-04-27 17:19:27.026 -03 [13244] LOG:  iniciando PostgreSQL 17.4 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit
+2025-04-27 17:19:27.032 -03 [13244] LOG:  escutando no endereÁo IPv6 "::1", porta 5432
+2025-04-27 17:19:27.033 -03 [13244] LOG:  escutando no endereÁo IPv4 "127.0.0.1", porta 5432
+2025-04-27 17:19:27.261 -03 [7384] LOG:  sistema de banco de dados foi desligado em 2025-04-27 17:13:54 -03
+2025-04-27 17:19:27.317 -03 [13244] LOG:  sistema de banco de dados est· pronto para aceitar conexıes
+2025-04-27 17:20:33.521 -03 [11484] ERRO:  cancelando o comando devido a um pedido do usu·rio
+2025-04-27 17:20:33.533 -03 [13244] LOG:  pedido de desligamento r·pido foi recebido
+2025-04-27 17:20:33.593 -03 [13244] LOG:  interrompendo quaisquer transaÁıes ativas
+2025-04-27 17:20:33.599 -03 [13244] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 11484) terminou com cÛdigo de retorno 1
+2025-04-27 17:20:33.619 -03 [4348] LOG:  desligando
+2025-04-27 17:20:33.653 -03 [4348] LOG:  checkpoint starting: shutdown immediate
+2025-04-27 17:20:33.816 -03 [4348] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.042 s, total=0.198 s; sync files=2, longest=0.030 s, average=0.021 s; distance=0 kB, estimate=0 kB; lsn=0/15EF940, redo lsn=0/15EF940
+2025-04-27 17:20:33.837 -03 [13244] LOG:  sistema de banco de dados est· desligado
+2025-04-27 17:20:37.274 -03 [13212] LOG:  iniciando PostgreSQL 17.4 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit
+2025-04-27 17:20:37.280 -03 [13212] LOG:  escutando no endereÁo IPv6 "::1", porta 5432
+2025-04-27 17:20:37.280 -03 [13212] LOG:  escutando no endereÁo IPv4 "127.0.0.1", porta 5432
+2025-04-27 17:20:37.473 -03 [22216] LOG:  sistema de banco de dados foi desligado em 2025-04-27 17:20:33 -03
+2025-04-27 17:20:37.540 -03 [13212] LOG:  sistema de banco de dados est· pronto para aceitar conexıes
+2025-04-27 17:20:52.920 -03 [8112] ERRO:  cancelando o comando devido a um pedido do usu·rio
+2025-04-27 17:20:52.929 -03 [13212] LOG:  pedido de desligamento r·pido foi recebido
+2025-04-27 17:20:52.976 -03 [13212] LOG:  interrompendo quaisquer transaÁıes ativas
+2025-04-27 17:20:52.976 -03 [13212] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 8112) terminou com cÛdigo de retorno 1
+2025-04-27 17:20:52.996 -03 [20440] LOG:  desligando
+2025-04-27 17:20:53.020 -03 [20440] LOG:  checkpoint starting: shutdown immediate
+2025-04-27 17:20:53.199 -03 [20440] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.039 s, total=0.204 s; sync files=2, longest=0.027 s, average=0.020 s; distance=0 kB, estimate=0 kB; lsn=0/15EF9F0, redo lsn=0/15EF9F0
+2025-04-27 17:20:53.280 -03 [13212] LOG:  sistema de banco de dados est· desligado
+2025-04-27 17:42:06.932 -03 [21064] LOG:  iniciando PostgreSQL 17.4 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit
+2025-04-27 17:42:06.938 -03 [21064] LOG:  escutando no endereÁo IPv6 "::1", porta 5432
+2025-04-27 17:42:06.939 -03 [21064] LOG:  escutando no endereÁo IPv4 "127.0.0.1", porta 5432
+2025-04-27 17:42:07.243 -03 [2876] LOG:  sistema de banco de dados foi desligado em 2025-04-27 17:20:53 -03
+2025-04-27 17:42:07.320 -03 [21064] LOG:  sistema de banco de dados est· pronto para aceitar conexıes
+2025-04-27 17:44:36.128 -03 [16716] ERRO:  cancelando o comando devido a um pedido do usu·rio
+2025-04-27 17:44:36.130 -03 [21064] LOG:  pedido de desligamento r·pido foi recebido
+2025-04-27 17:44:36.194 -03 [21064] LOG:  interrompendo quaisquer transaÁıes ativas
+2025-04-27 17:44:36.195 -03 [21064] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 16716) terminou com cÛdigo de retorno 1
+2025-04-27 17:44:36.212 -03 [7480] LOG:  desligando
+2025-04-27 17:44:36.248 -03 [7480] LOG:  checkpoint starting: shutdown immediate
+2025-04-27 17:44:36.411 -03 [7480] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.039 s, total=0.199 s; sync files=2, longest=0.027 s, average=0.020 s; distance=0 kB, estimate=0 kB; lsn=0/15EFAA0, redo lsn=0/15EFAA0
+2025-04-27 17:44:36.428 -03 [21064] LOG:  sistema de banco de dados est· desligado
+2025-04-27 17:49:41.498 -03 [10284] LOG:  iniciando PostgreSQL 17.4 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit
+2025-04-27 17:49:41.504 -03 [10284] LOG:  escutando no endereÁo IPv6 "::1", porta 5432
+2025-04-27 17:49:41.504 -03 [10284] LOG:  escutando no endereÁo IPv4 "127.0.0.1", porta 5432
+2025-04-27 17:49:41.712 -03 [6648] LOG:  sistema de banco de dados foi desligado em 2025-04-27 17:44:36 -03
+2025-04-27 17:49:41.759 -03 [10284] LOG:  sistema de banco de dados est· pronto para aceitar conexıes
+2025-04-27 17:49:56.649 -03 [11160] ERRO:  cancelando o comando devido a um pedido do usu·rio
+2025-04-27 17:49:56.654 -03 [10284] LOG:  pedido de desligamento r·pido foi recebido
+2025-04-27 17:49:56.690 -03 [10284] LOG:  interrompendo quaisquer transaÁıes ativas
+2025-04-27 17:49:56.693 -03 [10284] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 11160) terminou com cÛdigo de retorno 1
+2025-04-27 17:49:56.726 -03 [8988] LOG:  desligando
+2025-04-27 17:49:56.751 -03 [8988] LOG:  checkpoint starting: shutdown immediate
+2025-04-27 17:49:56.902 -03 [8988] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.039 s, total=0.176 s; sync files=2, longest=0.026 s, average=0.020 s; distance=0 kB, estimate=0 kB; lsn=0/15EFB18, redo lsn=0/15EFB18
+2025-04-27 17:49:56.921 -03 [10284] LOG:  sistema de banco de dados est· desligado

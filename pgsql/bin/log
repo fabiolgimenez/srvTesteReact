@@ -1,0 +1,14 @@
+2025-04-26 15:54:48.038 -03 [21108] LOG:  iniciando PostgreSQL 17.4 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit
+2025-04-26 15:54:48.044 -03 [21108] LOG:  escutando no endereço IPv6 "::1", porta 5432
+2025-04-26 15:54:48.044 -03 [21108] LOG:  escutando no endereço IPv4 "127.0.0.1", porta 5432
+2025-04-26 15:54:48.218 -03 [14164] LOG:  sistema de banco de dados foi desligado em 2025-04-26 15:53:21 -03
+2025-04-26 15:54:48.269 -03 [21108] LOG:  sistema de banco de dados está pronto para aceitar conexões
+2025-04-26 15:56:35.505 -03 [14972] FATAL:  role "postgres" não existe
+2025-04-26 15:56:35.587 -03 [11940] FATAL:  role "postgres" não existe
+2025-04-26 15:59:13.722 -03 [21108] LOG:  pedido de desligamento rápido foi recebido
+2025-04-26 15:59:13.784 -03 [21108] LOG:  interrompendo quaisquer transações ativas
+2025-04-26 15:59:13.807 -03 [21108] LOG:  processo trabalhador em segundo plano "logical replication launcher" (PID 5680) terminou com código de retorno 1
+2025-04-26 15:59:13.812 -03 [21592] LOG:  desligando
+2025-04-26 15:59:13.852 -03 [21592] LOG:  checkpoint starting: shutdown immediate
+2025-04-26 15:59:14.276 -03 [21592] LOG:  checkpoint complete: wrote 36 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.295 s, total=0.464 s; sync files=11, longest=0.040 s, average=0.027 s; distance=197 kB, estimate=197 kB; lsn=0/1599AB8, redo lsn=0/1599AB8
+2025-04-26 15:59:14.292 -03 [21108] LOG:  sistema de banco de dados está desligado
